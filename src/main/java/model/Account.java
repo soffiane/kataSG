@@ -26,11 +26,7 @@ public class Account {
         return history;
     }
 
-    public void deposit(BigDecimal amount) {
-        setBalance(this.balance.add(amount));
-    }
-
-    public void withdraw(BigDecimal amount) {
-        setBalance(this.balance.subtract(amount));
+    public void updateHistory(TransactionRecord transactionRecord) {
+        history.add(transactionRecord);
     }
 }

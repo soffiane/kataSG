@@ -1,8 +1,14 @@
 package service;
 
+import model.Account;
+import model.Operation;
+import model.TransactionRecord;
+
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 public interface TransactionService {
-    void recordTransaction(LocalDateTime date, BigDecimal amount, LocalDateTime dateTime);
+    void recordTransaction(TransactionRecord transactionRecord, Account account);
+
+    TransactionRecord createTransaction(Operation operation, LocalDateTime dateTime, BigDecimal amount, BigDecimal balance);
 }
