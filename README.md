@@ -25,3 +25,9 @@ When in doubt, go for the simplest solution
 **As a** bank client
 
 **I want to** make a withdrawal from my account
+----------------------------------------------------------------------------------
+# How to use
+
+Clone the repo in your local IDE and just build the application and launch the main() method in KataApplication.java.
+
+The run() method overrides the run() method provided by SpringBoot so you won't be able to launch unit test with the overriden run() method.
